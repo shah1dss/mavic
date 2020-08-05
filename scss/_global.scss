@@ -39,13 +39,27 @@ body{
     margin: 0 auto;
 }
 .page-section{
-    height: 100vh;
     background-image: url("../images/page-bg.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     position: relative;
-    padding: 74px 0 50px;
+    &::before{
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        background: linear-gradient(119.35deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: 0.15;
+    }
+    &__wrapper{
+        z-index: 1;
+        position: relative;
+        padding: 74px 0 50px;
+        min-height: 100vh;
+    }
 }
 .contacts{
     .scroll__btn{
@@ -61,7 +75,7 @@ body{
     font-size: 44px;
     padding-left: 25px;
     margin-bottom: 55px;
-    padding-top: 105px;
+    padding-top: 200px;
 }
 .scroll__btn{
     padding: 13px 0 30px;
