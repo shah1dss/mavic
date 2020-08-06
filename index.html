@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mavic pro</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <a class="logo" href="#">
+        <a class="logo" href="#top">
           <picture class="logo__img">
             <source srcset="images/logo-mobile.png" media="(max-width: 600px)">
             <img src="images/logo.png" alt="">
@@ -21,19 +21,19 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">О ДРОНЕ</a>
+              <a class="menu__list-link" href="#products">О ДРОНЕ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ПРЕИМУЩЕСТВА</a>
+              <a class="menu__list-link" href="#benefits">ПРЕИМУЩЕСТВА</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ХАРАКТЕРИСТИКИ</a>
+              <a class="menu__list-link" href="#specification">ХАРАКТЕРИСТИКИ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">ВОПРОСЫ</a>
+              <a class="menu__list-link" href="#questions">ВОПРОСЫ</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">КОНТАКТЫ</a>
+              <a class="menu__list-link" href="#contacts">КОНТАКТЫ</a>
             </li>  
           </ul>
         </nav>
@@ -45,7 +45,8 @@
     </div>
   </header>
 
-  <section class="page-section top">
+  <main id="fullpage">
+  <section id="top" class="page-section top">
     <div class="page-section__wrapper top__wrapper">  
       <div class="container">
         <div class="top__inner">
@@ -140,7 +141,7 @@
         <h3 class="title">Преимущества</h3>
         <div class="benefits__items">
 
-            <div class="benefits__item benefits__item-1">
+            <div class="benefits__item">
               <div class="benefits__num">1</div>
               <div class="benefits__img">
                 <img src="images/benefits-1.jpg" alt="">
@@ -221,11 +222,12 @@
         <h3 class="title">Характеристики</h3>
         <div class="specification__inner">
           <div class="specification__item">
-            <div class="specification__box">
+            <div class="specification__box specification__box-1">
               <h4 class="specification__box-title">Dlog-M 10 бит</h4>
-              <p class="specification__box-text">Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с более широким динамическим диапазоном, дающим больше возможностей для цветокоррекции.</p>
+              <p class="specification__box-text">
+                Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с более широким динамическим диапазоном, дающим больше возможностей для цветокоррекции.</p>
             </div>
-            <div class="specification__box">
+            <div class="specification__box specification__box-2">
               <h4 class="specification__box-title">Камера Hasselblad</h4>
               <p class="specification__box-text">
                 Камера Hasselblad L1D-20С 
@@ -234,17 +236,17 @@
               </p>
             </div>  
           </div>
-          <div class="specification__item">
+          <div class="specification__item specification__item--center">
             <img src="images/dron.png" alt="">
           </div>
           <div class="specification__item">
-            <div class="specification__box">
+            <div class="specification__box specification__box-3">
               <h4 class="specification__box-title">Матрица CMOS 1</h4>
               <p class="specification__box-text">
                 Зона активной работы новой 1-дюймовой матрицы CMOS в четыре раза превышает показатели Mavic Pro
               </p>
             </div> 
-            <div class="specification__box">
+            <div class="specification__box specification__box-4">
               <h4 class="specification__box-title">Видео HDR</h4>
               <p class="specification__box-text">
                 Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и просматривать запись в полном цветовом спектре
@@ -274,7 +276,7 @@
               В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость, уровень шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция Hyperlapse (гиперлапс).
             </p>  
           </div>
-          <div class="questions__item">
+          <div class="questions__item questions__item--active">
             <h4 class="questions__item-title">
               Чем Mavic 2 лучше Mavic Pro?  
             </h4>  
@@ -364,26 +366,27 @@
             </li>
           </ul>
         </div>
+        <footer class="footer">
+          <div class="container">
+            <p class="footer__copy">
+              © DJI, 2020
+            </p>
+          </div>
+        </footer>  
       </div>
-      <div class="scroll__btn">
-        <a href="#">
-          <img src="images/arrows-down.png" alt="arrows-down">
-        </a>
-      </div>
+        <!-- <div class="scroll__btn">
+          <a href="#">
+            <img src="images/arrows-down.png" alt="arrows-down">
+          </a>
+        </div>   -->
     </div>
   </section>
+</main>
 
-  <footer class="footer">
-    <div class="container">
-      <p class="footer__copy">
-        © DJI, 2020
-      </p>
-    </div>
-  </footer>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-</html>
+</html> 
